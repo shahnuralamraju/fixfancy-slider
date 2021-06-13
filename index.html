@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Fancy Slider</title>
+  <link rel="shortcut icon" href="srnewlogo.png" type="image/x-icon">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/adcebcc992.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="mt-5 text-center">Search Image for create slider</h2>
+    <div class="form-inline mt-3 d-flex justify-content-center">
+      <div class="input-group col-md-6 mb-2">
+        <input type="text" class="form-control" id="search" placeholder="&#xf002; Nature"
+          style="font-family: FontAwesome;">
+      </div>
+      <button type="button" id="search-btn" class="btn btn-primary mb-2">Search<i
+          class="fas fa-search ml-2"></i></button>
+      <button type="button" onclick="pageRefresher()" class="btn btn-danger mb-2 ml-2">Refresh<i
+          class="fas fa-times ml-2"></i></button>
+    </div>
+    <!-- spinner -->
+    <div id="loading-spinner" class="d-flex justify-content-center invisible">
+      <div class="spinner-border text-white" role="status">
+        <span class="visually-hidden "></span>
+      </div>
+
+    </div>
+
+    <section id="img-container" class="images">
+      <div class="justify-content-around align-items-center mt-3 gallery-header mb-2">
+        <h3 class="head-title text-center">Select image for create slider</h3>
+        <div class="input-group col-md-3 mb-2 mb-md-0">
+          <input class="form-control" id="duration" placeholder="slider change duration">
+        </div>
+        <button onclick="createSlider()" id="create-slider" class="btn btn-primary px-5">Create slider</button>
+      </div>
+      <div class="row gallery">
+
+      </div>
+    </section>
+    <!-- slider -->
+    <div id="slider-container" class="main">
+      <section class="mt-5" id="sliders">
+
+      </section>
+      <div id="dot-div" class="dots d-flex mt-2 w-100 justify-content-center align-items-center bg-transparent">
+        <span class="dot" onclick="changeItem(-1)"></span>
+        <span class="dot" onclick="changeItem(1)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
