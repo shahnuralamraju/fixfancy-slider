@@ -57,8 +57,11 @@ img {
   cursor: pointer;
   margin: 0 3px;
 }
-.btn-primary{
+.btn-secondary{
   background: linear-gradient(23deg, red, orange);
+}
+.btn-secondary:hover{
+  background: linear-gradient(45deg, rgb(231, 76, 4), rgb(255, 0, 149));
 }
 .main {
   display: none;
