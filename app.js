@@ -78,7 +78,7 @@ const createSlider = () => {
   imagesArea.style.display = 'none';
   const duration = sliderTime.value || 1000;
   // fixing negative time value
-  if (duration < 0) {
+  if (duration <= 0) {
     alert('Time can not be negative.');
     imagesArea.style.display = 'block';
     parentSliderContainer.style.display = 'none';
