@@ -46,6 +46,10 @@ img {
 .prev, .next {
   background-color: transparent;
   padding: 8px 10px;
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 22px;
+}
+.prev:hover, .next:hover{
   color: #fff;
 }
 
