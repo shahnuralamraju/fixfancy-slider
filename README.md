@@ -9,6 +9,5 @@
 2. Page Refresh Button
 3. Keyboard Enter key funtionality with both search-button and slider-button
 
-
-
+live site:https://shahnuralamraju.github.io/fixfancy-slider/
 
